@@ -1,0 +1,49 @@
+.list {
+	margin-left: 100px;
+}
+
+p {
+	font-family: Arial;
+	font-size: 18px;
+	margin-left:50px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h3 {
+	font-size: 20px;
+	margin-left:50px;
+}
+
+.title {
+	padding-bottom: 30px;
+}
+
+.nav {
+	background-color:#B4FAEB;
+	padding: 15px;
+}
+
+.nav li{
+	display:inline;
+	padding: 15px;
+}
+
+li {
+	font-size: 18px;
+}
+
+.jumbotron {
+	background-image:url('http://placekitten.com/1200/400');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	width: 1200px;
+	text-color: white;
+}
+
+#yingwang {
+	color: white;
+}
