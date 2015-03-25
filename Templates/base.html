@@ -3,18 +3,64 @@
 <head>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link href = "main.css" type = "text/css" rel = "stylesheet">
+	<title>Ying's World</title>
 </head>
 
 <body>
+	<div id="filler">
+		<div id="kitty">
+			<img class="center" src= "https://dl.dropboxusercontent.com/u/18456730/kitty.jpg" alt="Smiley face" height="100">
+		</div>
+	</div>
 	<div class = "nav">
- 		<nav>
-    		{{PrimaryNavigation}}
-    	</nav>
+		<div>
+			<ul class="pull-left">
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "about.html">About Me</a></li>
+				<li><a href = "projects.html">Projects</a></li>
+				<li><a href = "resume.html">Resume</a></li>
+				<li><a href = "photography.html">Gallery</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<ul class="pull-right">
+				<li><a href = "activity.html">Changelog</a></li>
+				<li><a href = "contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="search">
+			<form action="http://google.com/search" method="get">
+				<input type="hidden" name="sitesearch" value="http://yingwang.droppages.com/">
+				<input name="q">
+				<input type="submit" value="search site">
+			</form>
+		</div>
+
 	</div>
  	<main class="content">
-		{{Body}}
+			{{Body}}
 	</main>
 
+	<div id = "footer">
+		<div>
+			<ul class="pull-left">
+				<li>
+					<a href="mailto:ywang.botany@gmail.com?Subject=Hello">Email: ywang.botany@gmail.com</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="pull-right">
+				<li>
+					<a href = "http://www.linkedin.com/in/wingclover">Linkedin: http://www.linkedin.com/in/wingclover</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
 </body>
+
 </html>

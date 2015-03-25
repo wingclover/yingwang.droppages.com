@@ -1,7 +1,0 @@
-:base
-<div class="jumbotron">
-	<div class="container">
-		<h1 id="yingwang">Welcome to Ying Wang's Homepage!</h1>
-	</div>	
-</div>	
-
