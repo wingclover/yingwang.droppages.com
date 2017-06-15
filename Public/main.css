@@ -1,78 +1,113 @@
-body > .content {
-	height:auto;
+/* Ensure elements load hidden before ScrollReveal runs */
+.sr #intro-tile p, .sr #contact, .sr .thumbnail, .sr #resume .center_piece{ visibility: hidden; }
+
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family: "Harmattan",sans-serif;
+	font-size: 1.2em;
+}
+
+#wrapper {
 	min-height:100%;
+	position:relative;
 }
 
-html, body, .content {
-	height: 100%;
-}
+#content {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 50px; /*Height of footer*/
 
-.list {
-	margin-left: 100px;
 }
 
 .box {
 	padding:15px;
 }
 
-p {
-	font-family: Arial;
-	font-size: 18px;
-	margin-left:50px;
-}
+
+
+/*--- header ---*/
 
 h1 {
-	text-align: center;
+	font-family: "Old Standard TT",serif;
+	margin-top: 0px;
+	text-decoration: none;
+	color: grey;
 }
 
-h3 {
-	font-size: 20px;
+.navbar-brand a:focus, .navbar-brand a:hover {
+	text-decoration: none;
 }
 
-.title {
-	padding-bottom: 30px;
-}
 
-.nav {
+#header-nav {
 	background-color:#B4FAEB;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	border-radius: 0;
 }
 
-.nav li{
-	display:inline;
+
+#kitty-logo {
+	margin-top: -30px;
+	margin-left: auto;
+	margin-right: auto;
+	border:5px solid #B4FAEB;
+	border-radius: 15px;
+}
+
+#nav-list li{
 	padding: 10px;
 }
 
-li {
-	font-size: 18px;
+#nav-list a{
+	border: 2px solid #B4FAEB;
+	border-radius: 20px;
 }
 
-.jumbotron {
-	background-image:url('https://dl.dropboxusercontent.com/u/18456730/P4231103.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 800px;
+#nav-list a:hover {
+	background-color: white;
+}
+
+/*--- end of header ---*/
+
+
+/*--- footer ---*/
+
+footer {
+	background-color: #B4FAEB;
+	height: 50px;
 	width: 100%;
-	text-color: white;
-	
+	position: absolute;
+	bottom:0;
+	left:0;
+	padding-top: 10px; /*to center the text*/
+}
+
+/*--- end of footer ---*/
+
+
+/*-- base.html --*/
+
+.title {
+	padding: 10px 0 30px 0;
 }
 
 #yingwang {
 	color: black;
 }
 
-.thumbnail {
-    float: left;
-    width: 32%;
-    height: 30%;
-    margin: 5px;
+/*-- end of base.html --*/
+
+.glyphicon {
+	margin-right: 10px;
 }
 
-.widethumbnail {
-    float: left;
-    width: 50%;
-    height: 30%;
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
     margin: 5px;
 }
 
@@ -82,58 +117,122 @@ li {
 	margin-right: auto;
 }
 
-.content {
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 50px;
+
+
+#contact {
+	padding: 5px 20px 20px 20px;
+	background-color: #B4FAEB;
+	box-shadow: 10px 10px 5px #888888 ;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	font-size: 0.8em;
+
+}
+
+#contact a {
+	color: black;
+}
+
+#intro-tile {
+	padding: 0 50px 10px 50px;
 }
 
 .center_piece {
-	width: 900px;
-	padding: 100px;
-	background-color: #CEFFF6;
+	width: 85%;
+	padding: 10px 40px 10px 40px;
+	/*background-color: #CEFFF6;*/
+	background-color:#B4FAEB;
 	box-shadow: 10px 10px 5px #888888 ;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50px;
+	margin: 0px auto 20px auto;
+	border-radius: 10px;
 }
-#search {
-	margin-left: 800px;
+
+
+/*-- resume.html --*/
+
+/*#clickme {
+	height: 200px;
+	padding: 100px;
+}*/
+
+#resume{
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 0.8em;
+}
+
+#game-list {
+	display:block;
+}
+
+#game-list li {
+	display: inline-block;
+	margin-left: 10px;
 }
 
 .inline_list li {
-	display:inline;
+	display:inline-block;
 	padding:5px;
 	background:white;
 }
 
-#footer {
-	position:relative;
-	clear:both;
-	background-color:#B4FAEB;
-	margin-top:-50px;
-	height:50px;
+.nobull {
+list-style-type: none;
+}
+
+/*-- end of resume.html --*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+@media (max-width: 767px) {
+	#kitty-logo {
+		height: 75px;
+		width: 70px;
+		margin-top: -30px;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 20px;
+		font-weight: bold; 
+	}
+
+	.navbar-header {
+		padding-bottom: 10px;
+	}
+	.center_piece {
 	width: 100%;
+	padding: 10px;
+	box-shadow: none;
+	}
 }
 
-#footer li{
-	display:inline;
-	padding-top: 10px;
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 991px) and (min-width: 768px) {
+	#kitty-logo {
+		height: 85px;
+		width: 80px;
+		margin-top: -25px;
+	}
+	h1 {
+		font-size: 32px;
+	}
+
+	#nav-list li{
+		padding: 10px 5px 10px 5px;
+}
+	#nav-list {
+		font-size: 1em;
+	}
+
 }
 
-#filler {
-	height:30px;
-}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
 
-#clickme {
-	height: 200px;
-	padding: 100px;
-}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
 
-#kitty {
-	width:98px;
-	margin-left: auto;
-	margin-right: auto;
-	border:5px solid #B4FAEB;
-}
+
